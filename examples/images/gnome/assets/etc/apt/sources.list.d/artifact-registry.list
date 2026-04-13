@@ -1,0 +1,1 @@
+deb [signed-by=/etc/apt/keyrings/cloud.google.asc] https://packages.cloud.google.com/apt apt-transport-artifact-registry-stable main
