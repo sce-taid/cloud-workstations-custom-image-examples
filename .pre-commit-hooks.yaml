@@ -1,0 +1,23 @@
+- id: gitseep
+  name: GitSeep (amend and auto-approve)
+  description: Performs a full history reconstruction, amending uncommitted changes and auto-approving all layers.
+  entry: go run skills/persona-swe/scripts/cmd/gitseep/main.go -ay
+  language: golang
+  pass_filenames: false
+  stages: [manual]
+
+- id: gitseep-check
+  name: Validate GitSeep Stratigraphy
+  description: Verifies that the Git history is fully sedimented according to .gitseep.yaml rules without making changes.
+  entry: go run skills/persona-swe/scripts/cmd/gitseep/main.go check
+  language: golang
+  pass_filenames: false
+
+- id: clean-whitespace
+  name: Clean Trailing Whitespace
+  description: Removes trailing whitespace from text files.
+  entry: go run skills/persona-swe/scripts/cmd/clean_whitespace/main.go
+  language: golang
+  pass_filenames: true
+  types: [text]
+  exclude: "node_modules/|dist/|vendor/|tests/integration/"
