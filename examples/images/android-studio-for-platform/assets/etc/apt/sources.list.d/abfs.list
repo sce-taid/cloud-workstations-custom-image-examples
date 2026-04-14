@@ -1,0 +1,1 @@
+deb [signed-by=/etc/apt/keyrings/cloud.google.asc] ar+https://us-apt.pkg.dev/projects/abfs-binaries abfs-apt-alpha-public main
