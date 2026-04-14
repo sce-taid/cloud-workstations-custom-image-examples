@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Copyright 2025 Google LLC
+# Copyright 2025-2026 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,11 +13,14 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
-# This script removes files that are not needed when taking a disk snapshot.
-# These files are typically user-specific configuration files or credentials
-# that should not be included in the snapshot.
 
-rm ~/.gitcookies
-rm ~/gitconfig
-rm -r ~/.config/google-chrome
+#
+# This script stops the Android Automotive OS (AAOS) 15 Cuttlefish Virtual Device.
+
+CODEBASE_DIR="${HOME}/aaos/vcar"
+
+cd "${CODEBASE_DIR}" || exit
+# shellcheck source=/dev/null
+source build/envsetup.sh && \
+    lunch aosp_cf_x86_64_auto-ap4a-userdebug && \
+    stop_cvd
