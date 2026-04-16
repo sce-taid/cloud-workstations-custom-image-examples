@@ -23,7 +23,7 @@ The examples provided are intended as samples only, and are not stable across up
 ## Images
 
 - [**android-studio**](examples/images/android/android-studio): Contains an example image that starts Android Studio running under GNOME that can be accessed by a browser-based client.
-- [**android-open-source-project**](examples/images/android-open-source-project): Contains images that can be used to [build](examples/images/android-open-source-project/repo-builder/) and develop against the Android Open Source Project using [Code OSS](examples/images/android-open-source-project/code-oss) or [Android Studio for Platform](examples/images/android-open-source-project/android-studio-for-platform/).
+- [**android-open-source-project**](examples/images/android-open-source-project): Contains images that can be used to [build](examples/images/android-open-source-project/repo-builder/) and develop against the Android Open Source Project using [Code OSS](examples/images/android-open-source-project/code-oss) or [Android Studio for Platform](examples/images/android-studio-for-platform/).
 - [**antigravity**](examples/images/antigravity): Custom Image for Cloud Workstations with Antigravity.
 - [**chrome**](examples/images/chrome): Contains examples showing how to interact with an instance of chrome running on a remote workstation using either [browse-lite](examples/images/chrome/code-oss-browse-lite/) extension running in Code OSS, or [Xpra](examples/images/chrome/code-oss-xpra/).
 - [**gnome**](examples/images/gnome): GNOME Blueprint for Google Cloud Workstations with Guacamole; includes Gemini CLI and Agent Development Toolkit (ADK) by default.
